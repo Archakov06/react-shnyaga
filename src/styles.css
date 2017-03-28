@@ -1,0 +1,53 @@
+
+.shnayga {
+  border-radius: 13px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.1s ease;
+}
+.shnayga:after {
+  display: block;
+  content: '';
+  left: 4px;
+  top: 3px;
+  border-radius: 12px;
+  background: #fff;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.shnayga--normal {
+  width: 50px;
+  height: 26px;
+}
+.shnayga--normal:after {
+  width: 19px;
+  height: 19px;
+}
+.shnayga--normal.shnayga--checked:after {
+  left: 27px;
+}
+.shnayga--small {
+  width: 45px;
+  height: 23px;
+}
+.shnayga--small:after {
+  width: 16px;
+  height: 16px;
+}
+.shnayga--small.shnayga--checked:after {
+  left: 25px;
+}
+.shnayga--big {
+  width: 60px;
+  height: 27px;
+}
+.shnayga--big:after {
+  width: 20px;
+  height: 20px;
+}
+.shnayga--big.shnayga--checked:after {
+  left: 36px;
+}
+.shnayga--disabled {
+  cursor: not-allowed;
+}
