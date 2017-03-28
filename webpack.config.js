@@ -20,12 +20,12 @@ module.exports = {
       loaders: [
         {
           test: /\.js$/,
-          loader: "babel-loader",
+          loaders: ['babel-loader'],
           include: path.join(__dirname, '')
         },
         {
-          test: /(\.css$|\.styl$)/,
-          loader: 'style-loader!css-loader!stylus-loader'
+          test: /\.css$/,
+          loader: 'style-loader!css-loader'
         }
       ]
     },
