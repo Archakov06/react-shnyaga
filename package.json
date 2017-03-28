@@ -1,7 +1,7 @@
 {
-  "name": "react-shnayga",
+  "name": "react-shnyaga",
   "version": "1.0.0",
-  "description": "",
+  "description": "Is a switch ui component for React",
   "main": "webpack.config.js",
   "directories": {
     "example": "example"

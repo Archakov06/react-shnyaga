@@ -1,10 +1,10 @@
-.shnayga {
+.shnyaga {
   border-radius: 13px;
   cursor: pointer;
   display: inline-block;
   transition: background 0.1s ease;
 }
-.shnayga:after {
+.shnyaga:after {
   display: block;
   content: '';
   left: 4px;
@@ -14,39 +14,39 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 }
-.shnayga--normal {
+.shnyaga--normal {
   width: 50px;
   height: 26px;
 }
-.shnayga--normal:after {
+.shnyaga--normal:after {
   width: 19px;
   height: 19px;
 }
-.shnayga--normal.shnayga--checked:after {
+.shnyaga--normal.shnyaga--checked:after {
   left: 27px;
 }
-.shnayga--small {
+.shnyaga--small {
   width: 45px;
   height: 23px;
 }
-.shnayga--small:after {
+.shnyaga--small:after {
   width: 16px;
   height: 16px;
 }
-.shnayga--small.shnayga--checked:after {
+.shnyaga--small.shnyaga--checked:after {
   left: 25px;
 }
-.shnayga--big {
+.shnyaga--big {
   width: 60px;
   height: 27px;
 }
-.shnayga--big:after {
+.shnyaga--big:after {
   width: 20px;
   height: 20px;
 }
-.shnayga--big.shnayga--checked:after {
+.shnyaga--big.shnyaga--checked:after {
   left: 36px;
 }
-.shnayga--disabled {
+.shnyaga--disabled {
   cursor: not-allowed;
 }

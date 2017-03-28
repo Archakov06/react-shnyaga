@@ -2,7 +2,7 @@ import React from 'react'
 
 import './styles.css'
 
-export default class Shnayga extends React.Component {
+export default class Shnyaga extends React.Component {
 
   static defaultProps = {
     checked: false,
@@ -35,11 +35,11 @@ export default class Shnayga extends React.Component {
   render() {
 
     const className = [
-      'shnayga',
+      'shnyaga',
       this.props.className,
-      'shnayga--' + this.props.size,
-      this.state.checked ? 'shnayga--checked' : '',
-      this.props.disabled ? 'shnayga--disabled' : ''
+      'shnyaga--' + this.props.size,
+      this.state.checked ? 'shnyaga--checked' : '',
+      this.props.disabled ? 'shnyaga--disabled' : ''
     ].join(' ').replace(/\s{2,}/g,' ').trim();
 
     const bgColor = this.props.onColor && this.state.checked ? {backgroundColor: this.props.onColor} : {backgroundColor: this.props.offColor};
