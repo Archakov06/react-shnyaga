@@ -74,3 +74,12 @@ The component takes the following props.
         </tr>
     </tbody>
 </table>
+
+## Contacts
+* 	**E-Mail**
+	<hello@archakov.im>
+* 	**Website**
+	<http://archakov.im>
+
+## License
+Now licensed under the MIT License: <http://deuxhuithuit.mit-license.org>
