@@ -4,16 +4,6 @@ import './styles.css'
 
 export default class Shnyaga extends React.Component {
 
-  static defaultProps = {
-    checked: false,
-    onClick: (function() {}),
-    disabled: false,
-    className: '',
-    offColor: '#e6e6e6',
-    onColor: '#468cff',
-    size: 'normal'
-  }
-
   constructor(props) {
     super(props);
     this.state = {checked: this.props.checked};
@@ -49,14 +39,24 @@ export default class Shnyaga extends React.Component {
     );
   }
 
+  static defaultProps = {
+    checked: false,
+    onClick: (function() {}),
+    disabled: false,
+    className: '',
+    offColor: '#e6e6e6',
+    onColor: '#468cff',
+    size: 'normal'
+  }
+
   static propTypes = {
     checked: React.PropTypes.bool,
-    size: React.PropTypes.string,
     onClick: React.PropTypes.func,
     disabled: React.PropTypes.bool,
+    className: React.PropTypes.string,
     offColor: React.PropTypes.string,
     onColor: React.PropTypes.string,
-    className: React.PropTypes.string
+    size: React.PropTypes.string
   }
 
 }
