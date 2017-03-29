@@ -13,7 +13,7 @@ export default class Shnyaga extends React.Component {
     this.setState({checked: nextProps.checked});
   }
 
-  handleClick = (e) => {
+  handleClick(e) => {
     e.preventDefault();
     if(!this.props.disabled) {
       console.log(this.state);
