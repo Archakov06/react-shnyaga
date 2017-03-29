@@ -13,8 +13,8 @@ npm install react-shnyaga
 ## Usage
 ```js
 import React from 'react'
-import Shnayga from 'react-shnyaga'
-React.render(<Shnayga />, document.getElementById('root'))
+import Shnyaga from 'react-shnyaga'
+React.render(<Shnyaga />, document.getElementById('root'))
 ```
 
 ## Props
