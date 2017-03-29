@@ -6,7 +6,7 @@ export default class Shnyaga extends React.Component {
 
   static defaultProps = {
     checked: false,
-    onClick: null,
+    onClick: (function() {}),
     disabled: false,
     className: '',
     offColor: '#e6e6e6',
