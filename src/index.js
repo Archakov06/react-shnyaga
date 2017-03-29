@@ -7,6 +7,7 @@ export default class Shnyaga extends React.Component {
   constructor(props) {
     super(props);
     this.state = {checked: this.props.checked};
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -32,7 +33,7 @@ export default class Shnyaga extends React.Component {
       this.props.disabled ? 'shnyaga--disabled' : ''
     ].join(' ').replace(/\s{2,}/g,' ').trim();
 
-    const bgColor = this.props.onColor && this.state.checked ? {backgroundColor: this.props.onColor} : {backgroundColor: this.props.offColor};
+    const bgColor = this.state.checked ? {backgroundColor: this.props.onColor} : {backgroundColor: this.props.offColor};
 
     return (
       <div style={ bgColor } className={ className } onClick={ this.handleClick }></div>
