@@ -14,6 +14,9 @@ npm install react-shnyaga
 ```js
 import React from 'react'
 import Shnyaga from 'react-shnyaga'
+
+import './src/styles.css'
+
 React.render(<Shnyaga />, document.getElementById('root'))
 ```
 
