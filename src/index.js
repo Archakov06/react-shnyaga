@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './styles.css'
-
 export default class Shnyaga extends React.Component {
 
   constructor(props) {
