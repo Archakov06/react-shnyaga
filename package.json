@@ -2,7 +2,7 @@
   "name": "react-shnyaga",
   "version": "1.0.13",
   "description": "Is a switch ui component for React",
-  "main": "./lib/index",
+  "main": "lib/index",
   "homepage": "https://github.com/Archakov06/react-shnyaga",
   "devDependencies": {
     "babel-cli": "^6.24.0",
