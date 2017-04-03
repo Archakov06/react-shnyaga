@@ -1,8 +1,8 @@
 {
   "name": "react-shnyaga",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Is a switch ui component for React",
-  "main": "src/index.js",
+  "main": "./lib/index",
   "homepage": "https://github.com/Archakov06/react-shnyaga",
   "directories": {
     "example": "example"
