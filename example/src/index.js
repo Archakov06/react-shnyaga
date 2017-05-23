@@ -16,6 +16,7 @@ export default class Example extends React.Component {
 
     return (
       <div>
+        <h1>React Shnayga - switcher component</h1>
         <div>
           <h4>Small (checked = true):</h4>
           <Shnayga

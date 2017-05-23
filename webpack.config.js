@@ -15,7 +15,6 @@ module.exports = {
         publicPath: BUILD_PATH + '/',
         filename: APP_FILENAME + '.js',
     },
-    watch: true,
     module: {
       loaders: [
         {

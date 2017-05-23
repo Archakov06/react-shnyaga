@@ -9,14 +9,14 @@
   content: '';
   left: 4px;
   top: 3px;
-  border-radius: 12px;
+  border-radius: 30px;
   background: #fff;
   position: relative;
   transition: all 0.2s ease-in-out;
 }
 .shnyaga--normal {
   width: 50px;
-  height: 26px;
+  height: 25px;
 }
 .shnyaga--normal:after {
   width: 19px;
@@ -27,7 +27,7 @@
 }
 .shnyaga--small {
   width: 45px;
-  height: 23px;
+  height: 22px;
 }
 .shnyaga--small:after {
   width: 16px;
@@ -38,7 +38,7 @@
 }
 .shnyaga--big {
   width: 60px;
-  height: 27px;
+  height: 26px;
 }
 .shnyaga--big:after {
   width: 20px;
