@@ -15,7 +15,7 @@ npm install react-shnyaga
 import React from 'react'
 import Shnyaga from 'react-shnyaga'
 
-import './src/styles.css'
+import 'react-shnyaga/dist/styles.css'
 
 React.render(<Shnyaga />, document.getElementById('root'))
 ```
@@ -82,7 +82,7 @@ The component takes the following props.
 * 	**E-Mail**
 	<hello@archakov.im>
 * 	**Website**
-	<http://archakov.im>
+	<https://archakov.im>
 
 ## License
 Now licensed under the MIT License: <http://deuxhuithuit.mit-license.org>
