@@ -1,18 +1,18 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
 
-import Shnayga from '../../src'
+import Shnayga from '../../src';
 
 export default class Example extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      checked: false
+      checked: false,
     };
   }
 
-  render(){
+  render() {
 
     return (
       <div>
@@ -28,7 +28,9 @@ export default class Example extends React.Component {
           <h4>Normal (isChecked = { this.state.checked.toString() }):</h4>
           <Shnayga
             checked={ this.state.checked }
-            onClick={ () => { this.setState({ checked: !this.state.checked }); } }
+            onClick={
+              () => { this.setState({ checked: !this.state.checked }); }
+            }
           />
         </div>
         <div>
@@ -52,4 +54,4 @@ export default class Example extends React.Component {
 render(
   <Example />,
   document.getElementById('root')
-)
+);
