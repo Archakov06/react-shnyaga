@@ -19,7 +19,7 @@
     "style-loader": "^0.16.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "babel src/index.js --out-file dist/index.js --source-map --presets es2015,react,stage-0"
   },
   "license": "MIT",
@@ -55,5 +55,12 @@
     "react-switcher",
     "react-switch",
     "react-shnyaga"
-  ]
+  ],
+  "dependencies": {
+    "babel-jest": "^21.0.2",
+    "enzyme": "^2.9.1",
+    "jest": "^21.0.2",
+    "prop-types": "^15.5.10",
+    "react-test-renderer": "^15.6.1"
+  }
 }

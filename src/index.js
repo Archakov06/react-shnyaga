@@ -1,23 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-export default class Shnyaga extends React.Component {
+export default class Shnyaga extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {checked: this.props.checked};
+    this.state = { checked: this.props.checked };
     this.handleClick = this.handleClick.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({checked: nextProps.checked});
+    this.setState({ checked: nextProps.checked });
   }
 
-  handleClick(e) {
-    e.preventDefault();
-    if(!this.props.disabled) {
-      console.log(this.state);
+  handleClick() {
+    if (!this.props.disabled) {
       this.props.onClick();
-      this.setState({checked: !this.state.checked});
+      this.setState({ checked: !this.state.checked });
     }
   };
 
@@ -28,10 +27,10 @@ export default class Shnyaga extends React.Component {
       this.props.className,
       'shnyaga--' + this.props.size,
       this.state.checked ? 'shnyaga--checked' : '',
-      this.props.disabled ? 'shnyaga--disabled' : ''
-    ].join(' ').replace(/\s{2,}/g,' ').trim();
+      this.props.disabled ? 'shnyaga--disabled' : '',
+    ].join(' ').replace(/\s{2,}/g, ' ').trim();
 
-    const bgColor = this.state.checked ? {backgroundColor: this.props.onColor} : {backgroundColor: this.props.offColor};
+    const bgColor = { backgroundColor: this.props[this.state.checked ? 'onColor' : 'offColor'] };
 
     return (
       <div style={ bgColor } className={ className } onClick={ this.handleClick }></div>
@@ -40,22 +39,22 @@ export default class Shnyaga extends React.Component {
 
   static defaultProps = {
     checked: false,
-    onClick: (function() {}),
+    onClick: () => ({}),
     disabled: false,
     className: '',
     offColor: '#e6e6e6',
     onColor: '#468cff',
-    size: 'normal'
-  }
+    size: 'normal',
+  };
 
   static propTypes = {
-    checked: React.PropTypes.bool,
-    onClick: React.PropTypes.func,
-    disabled: React.PropTypes.bool,
-    className: React.PropTypes.string,
-    offColor: React.PropTypes.string,
-    onColor: React.PropTypes.string,
-    size: React.PropTypes.string
-  }
+    checked: PropTypes.bool,
+    onClick: PropTypes.func,
+    disabled: PropTypes.bool,
+    className: PropTypes.string,
+    offColor: PropTypes.string,
+    onColor: PropTypes.string,
+    size: PropTypes.string,
+  };
 
 }
