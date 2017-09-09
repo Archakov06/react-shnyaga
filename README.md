@@ -1,4 +1,5 @@
 ![Example](http://archakov.im/uploads/react-shnyaga-1.gif?1)
+[Source demo GIF](http://archakov.im/uploads/react-shnyaga-1.gif?1)
 
 #### **Shnyaga** - is a switch UI component for React.
 
