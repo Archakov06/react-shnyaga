@@ -3,7 +3,7 @@
 
 #### **Shnyaga** - is a switch UI component for React.
 
-## [Example](https://htmlpreview.github.io/?https://github.com/Archakov06/react-shnyaga/blob/master/example/dist/index.html)
+## [Example](https://archakov06.github.io/react-shnyaga/)
 
 ## Installation
 ```bash
